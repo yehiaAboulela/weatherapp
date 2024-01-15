@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <script
+      src="https://kit.fontawesome.com/eb83386641.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Weather</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-transparent py-5">
+        <div class="container">
+          <a class="logo" href="#">
+            <img src="images/logo.png" alt="cloud" />
+            <span class="ps-3 fw-bold">Weather</span>
+          </a>
+          <button
+            class="navbar-toggler d-lg-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav ms-auto mt-2 mt-lg-0 my-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-white px-3 py-0 my-nav-link active"
+                  href="#"
+                  >home</a
+                >
+              </li>
+              <li class="nav-item ps-4">
+                <a class="nav-link text-white px-3 py-0 my-nav-link" href="#"
+                  >news</a
+                >
+              </li>
+              <li class="nav-item ps-4">
+                <a class="nav-link text-white px-3 py-0 my-nav-link" href="#"
+                  >live cameras</a
+                >
+              </li>
+              <li class="nav-item ps-4">
+                <a class="nav-link text-white px-3 py-0 my-nav-link" href="#"
+                  >photos</a
+                >
+              </li>
+              <li class="nav-item ps-4">
+                <a class="nav-link text-white px-3 py-0 my-nav-link" href="#"
+                  >contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="find-location">
+        <div class="container">
+          <form>
+            <input
+              type="text"
+              placeholder="Find your location"
+              id="searchInput"
+              class="text-white"
+            />
+            <div class="btn-wrapper">
+              <button type="submit" id="find">Find</button>
+            </div>
+          </form>
+          <div class="info mb-5">
+            <div class="container text-light my-container">
+              <div class="main-info" id="currentDay"></div>
+              <div class="tomorrow-info text-center" id="nextDay"></div>
+              <div class="then-info text-center" id="thenDay"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7">
+            <form>
+              <input type="text" placeholder="Find your location" />
+              <div class="btn-wrapper">
+                <button type="submit">Find</button>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-5">
+            <div class="d-flex justify-content-center">
+              <ul class="social-links list-unstyled d-flex">
+                <li><i class="fa fa-facebook-f"></i></li>
+                <li><i class="fa fa-twitter"></i></li>
+                <li><i class="fa fa-google-plus"></i></li>
+                <li><i class="fa fa-pinterest"></i></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <p class="text-white-50 mt-3 ms-3">
+          Copyright 2014 Company name. Designed by Themezy. All rights reserved
+        </p>
+      </div>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
